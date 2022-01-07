@@ -1,8 +1,8 @@
 ﻿@page "/"
 
 <body>
-    <div style="float:left;width:35%;min-width:600px;">
-        <div style="float:right">
+    <div style="float:left;width:50%;min-width:600px;background-color:dimgrey;min-height:1000px">
+        <div style="float:left">
             <div class="InitiativeWoodTray">
                 <div class="InitiativeVelvetTray scrollbar">
 
@@ -57,59 +57,60 @@
                     }
 
                 </div>
-                <div style="height:200px; width:auto;float:left;margin:auto">
-                    <div class="SortInitiative" @onclick="()=>SortInitiative()">
-                        <t class="unselectable" style="color:white">Sort</t>
-                    </div>
-                    <div class="NextInitiative" @onclick="()=>NextInitiative()">
-                        <t class="unselectable" style="color:white">Next</t>
-                    </div>
-                    <div class="ClearInitiative" @onclick="()=>ClearInitiative()">
-                        <t class="unselectable" style="color:white">Clear</t>
-                    </div>
-                </div>
+
                 <div class="AddInitiativeTextArea">
-                    <input style="width:60%;margin-left:6px" type="text" @bind="InitiativeName" />
-                    <input style="width:10%" type="number" @bind="InitiativeRoll" />
+                    <input style="width:50%" type="text" @bind="InitiativeName" />
+                    <input style="width:15%" type="number" @bind="InitiativeRoll" />
                     <t class="unselectable" style="color:white">HP: </t>
-                    <input style="width:10%" type="number" @bind="InitiativeHP" />
+                    <input style="width:15%" type="number" @bind="InitiativeHP" />
                 </div>
                 <div class="AddInitiative" @onclick="()=>AddInitiative()">
 
                 </div>
             </div>
         </div>
+        <div style="height:200px; width:auto;float:left;margin:auto;margin-left:6px">
+            <div class="SortInitiative" @onclick="()=>SortInitiative()">
+                <t class="unselectable" style="color:white">Sort</t>
+            </div>
+            <div class="NextInitiative" @onclick="()=>NextInitiative()">
+                <t class="unselectable" style="color:white">Next</t>
+            </div>
+            <div class="ClearInitiative" @onclick="()=>ClearInitiative()">
+                <t class="unselectable" style="color:white">Clear</t>
+            </div>
+        </div>
     </div>
-        <div style="float:left;width:35%;min-width:600px;">
+        <div style="float: left; width: 50%; min-width: 600px; background-color: dimgrey; min-height: 1000px ">
             <div class="dieButtonContainer">
                 <div class="d20Button" @onclick="()=>AddD20()" @oncontextmenu="SubtractD20" @oncontextmenu:preventDefault="true">
                     <div class="CountCircleDie" hidden="@HideD20Count">
-                        <t class="unselectable">@d20toRoll</t>
+                        <t style="color:white" class="unselectable">@d20toRoll</t>
                     </div>
                 </div>
                 <div class="d12Button" @onclick="()=>AddD12()" @oncontextmenu="SubtractD12" @oncontextmenu:preventDefault="true">
                     <div class="CountCircleDie" hidden="@HideD12Count">
-                        <t class="unselectable">@d12toRoll</t>
+                        <t style="color:white" class="unselectable">@d12toRoll</t>
                     </div>
                 </div>
                 <div class="d10Button" @onclick="()=>AddD10()" @oncontextmenu="SubtractD10" @oncontextmenu:preventDefault="true">
                     <div class="CountCircleDie" hidden="@HideD10Count">
-                        <t class="unselectable">@d10toRoll</t>
+                        <t style="color:white" class="unselectable">@d10toRoll</t>
                     </div>
                 </div>
                 <div class="d8Button" @onclick="()=>AddD8()" @oncontextmenu="SubtractD8" @oncontextmenu:preventDefault="true">
                     <div class="CountCircleDie" hidden="@HideD8Count">
-                        <t class="unselectable">@d8toRoll</t>
+                        <t style="color:white" class="unselectable">@d8toRoll</t>
                     </div>
                 </div>
                 <div class="d6Button" @onclick="()=>AddD6()" @oncontextmenu="SubtractD6" @oncontextmenu:preventDefault="true">
                     <div class="CountCircleDie" hidden="@HideD6Count">
-                        <t class="unselectable">@d6toRoll</t>
+                        <t style="color:white" class="unselectable">@d6toRoll</t>
                     </div>
                 </div>
                 <div class="d4Button" @onclick="()=>AddD4()" @oncontextmenu="SubtractD4" @oncontextmenu:preventDefault="true">
                     <div class="CountCircleDie" hidden="@HideD4Count">
-                        <t class="unselectable">@d4toRoll</t>
+                        <t style="color:white" class="unselectable">@d4toRoll</t>
                     </div>
                 </div>
                 <div class="rollButton" @onclick="()=>RollDice()">
@@ -260,7 +261,6 @@
 
 @code
 {
-    string Output = "Temp Text";
     bool HideCancel = true;
     List<Initiative> InitiativeList = new();
     string InitiativeName = "";
@@ -504,6 +504,36 @@
         d8toRoll = 0;
         d6toRoll = 0;
         d4toRoll = 0;
+
+        //SortDice();
+    }
+
+    public void SortDice()
+    {
+        if (d100List.Any())
+        {
+            d100List.Sort();
+        }
+        if (d20List.Any())
+        {
+            d20List.Sort();
+        }
+        if (d12List.Any())
+        {
+            d12List.Sort();
+        }
+        if (d10List.Any())
+        {
+            d10List.Sort();
+        }
+        if (d6List.Any())
+        {
+            d6List.Sort();
+        }
+        if (d4List.Any())
+        {
+            d4List.Sort();
+        }
     }
 
     public void ClearDices()
@@ -607,6 +637,7 @@
 
         InitiativeName = "";
         InitiativeRoll = 0;
+        InitiativeHP = 0;
     }
 
     public void RemoveInitiative(Initiative i)

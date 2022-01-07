@@ -91,9 +91,8 @@ using DMMRemake.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 262 "C:\Users\Erik\source\repos\DMMRemake\DMMRemake\Pages\Index.razor"
+#line 263 "C:\Users\Erik\source\repos\DMMRemake\DMMRemake\Pages\Index.razor"
  
-    string Output = "Temp Text";
     bool HideCancel = true;
     List<Initiative> InitiativeList = new();
     string InitiativeName = "";
@@ -337,6 +336,36 @@ using DMMRemake.Shared;
         d8toRoll = 0;
         d6toRoll = 0;
         d4toRoll = 0;
+
+        //SortDice();
+    }
+
+    public void SortDice()
+    {
+        if (d100List.Any())
+        {
+            d100List.Sort();
+        }
+        if (d20List.Any())
+        {
+            d20List.Sort();
+        }
+        if (d12List.Any())
+        {
+            d12List.Sort();
+        }
+        if (d10List.Any())
+        {
+            d10List.Sort();
+        }
+        if (d6List.Any())
+        {
+            d6List.Sort();
+        }
+        if (d4List.Any())
+        {
+            d4List.Sort();
+        }
     }
 
     public void ClearDices()
@@ -440,6 +469,7 @@ using DMMRemake.Shared;
 
         InitiativeName = "";
         InitiativeRoll = 0;
+        InitiativeHP = 0;
     }
 
     public void RemoveInitiative(Initiative i)

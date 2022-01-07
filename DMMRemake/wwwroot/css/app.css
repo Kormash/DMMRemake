@@ -51,8 +51,8 @@ a, .btn-link {
 
 .InitiativeWoodTray {
     border: 3px solid black;
-    height: 250px;
-    width: 500px;
+    height: 300px;
+    width: 620px;
     background-image: url(../images/diceTrayWood.png);
     background-size: 101% 101%;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@ a, .btn-link {
 .InitiativeObject {
     background-image: url(../images/SlateStone.png);
     background-size: 100% 100%;
-    width: 90%;
+    width: 95%;
     height: 30px;
     margin-left: 6px;
     margin-top: 3px
@@ -96,6 +96,47 @@ a, .btn-link {
     text-align: center;
     background-image: url(../images/Icons/Add.png);
 }
+
+.AddInitiativePlayer {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    text-align: center;
+    margin-right: 6px;
+    background-image: url(../images/character.png);
+}
+    .AddInitiativePlayer:hover {
+        background-image: url(../images/characterHover.png);
+    }
+
+.AddInitiativeMonster {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    text-align: center;
+    margin-right: 6px;
+    background-image: url(../images/monster.png);
+}
+
+    .AddInitiativeMonster:hover {
+        background-image: url(../images/monsterHover.png);
+    }
+
+.AddInitiativeAlly {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    text-align: center;
+    margin-right: 6px;
+    background-image: url(../images/ally.png);
+}
+
+    .AddInitiativeAlly:hover {
+        background-image: url(../images/allyHover.png);
+    }
 
 .SortInitiative {
     width: 50px;
@@ -126,6 +167,37 @@ a, .btn-link {
     border: 2px solid black;
     background-image: url(../images/SlateStone.png);
 }
+
+.PlayerInitiative {
+    float: left;
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+    text-align: center;
+    margin-right: 5px;
+    background-image: url(../images/character.png);
+}
+
+.MonsterInitiative {
+    float: left;
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+    text-align: center;
+    margin-right: 5px;
+    background-image: url(../images/monster.png);
+}
+
+.AllyInitiative {
+    float: left;
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+    text-align: center;
+    margin-right: 5px;
+    background-image: url(../images/ally.png);
+}
+
 
 .RemoveInitiative {
     float: right;

@@ -505,34 +505,38 @@
         d6toRoll = 0;
         d4toRoll = 0;
 
-        //SortDice();
+        SortDice();
     }
 
     public void SortDice()
     {
         if (d100List.Any())
         {
-            d100List.Sort();
+            d100List = d100List.OrderByDescending(x => x.DiceResult).ToList();
         }
         if (d20List.Any())
         {
-            d20List.Sort();
+            d20List = d20List.OrderByDescending(x => x.DiceResult).ToList();
         }
         if (d12List.Any())
         {
-            d12List.Sort();
+            d12List = d12List.OrderByDescending(x => x.DiceResult).ToList();
         }
         if (d10List.Any())
         {
-            d10List.Sort();
+            d10List = d10List.OrderByDescending(x => x.DiceResult).ToList();
+        }
+        if (d8List.Any())
+        {
+            d8List = d8List.OrderByDescending(x => x.DiceResult).ToList();
         }
         if (d6List.Any())
         {
-            d6List.Sort();
+            d6List = d6List.OrderByDescending(x => x.DiceResult).ToList();
         }
         if (d4List.Any())
         {
-            d4List.Sort();
+            d4List = d4List.OrderByDescending(x => x.DiceResult).ToList();
         }
     }
 

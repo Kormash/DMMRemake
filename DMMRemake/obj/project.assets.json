@@ -1145,23 +1145,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Erik\\.nuget\\packages\\": {},
+    "C:\\Users\\denni\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Erik\\source\\repos\\DMMRemake\\DMMRemake\\DMMRemake.csproj",
+      "projectUniqueName": "D:\\repos\\DMMremake\\DMMRemake\\DMMRemake.csproj",
       "projectName": "DMMRemake",
-      "projectPath": "C:\\Users\\Erik\\source\\repos\\DMMRemake\\DMMRemake\\DMMRemake.csproj",
-      "packagesPath": "C:\\Users\\Erik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Erik\\source\\repos\\DMMRemake\\DMMRemake\\obj\\",
+      "projectPath": "D:\\repos\\DMMremake\\DMMRemake\\DMMRemake.csproj",
+      "packagesPath": "C:\\Users\\denni\\.nuget\\packages\\",
+      "outputPath": "D:\\repos\\DMMremake\\DMMRemake\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Erik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\denni\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1215,7 +1215,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
-            "version": "[5.0.10, 5.0.10]"
+            "version": "[5.0.13, 5.0.13]"
           }
         ],
         "frameworkReferences": {
@@ -1223,7 +1223,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

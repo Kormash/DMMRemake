@@ -1,4 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="C:\Users\Erik\source\repos\DMMRemake\DMMRemake\bin\Debug\net5.0\wwwroot\" />
-  <ContentRoot BasePath="/" Path="C:\Users\Erik\source\repos\DMMRemake\DMMRemake\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="D:\repos\DMMremake\DMMRemake\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="D:\repos\DMMremake\DMMRemake\obj\Debug\net5.0\scopedcss\bundle\" />
 </StaticWebAssets>
